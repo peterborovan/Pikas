@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "73305277898",
+    "firebase_url": "https://handy-theory-148710.firebaseio.com",
+    "project_id": "handy-theory-148710",
+    "storage_bucket": "handy-theory-148710.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73305277898:android:7fae2ef3be21a920",
+        "android_client_info": {
+          "package_name": "com.FMPH.pikas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73305277898-p3hrvjk56h9h4pltgsn3nr6qc5ikdpno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0cbpkE95JOxD192UXnWNCyTBVxTN4YKM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
