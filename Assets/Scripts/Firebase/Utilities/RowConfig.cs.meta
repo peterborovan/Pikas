@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fff4a36ecd4b38a408d5671a12bb4f97
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - score: {fileID: 114347904220423438, guid: 1e6dc9fb891404a67aeba481fb1d9e79, type: 2}
+  - email: {fileID: 114498086062509712, guid: 1e6dc9fb891404a67aeba481fb1d9e79, type: 2}
+  - level: {fileID: 114395660982063206, guid: 1e6dc9fb891404a67aeba481fb1d9e79, type: 2}
+  - profilePic: {fileID: 114285031278544236, guid: 1e6dc9fb891404a67aeba481fb1d9e79,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

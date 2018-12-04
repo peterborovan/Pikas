@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 using Firebase;
 using Firebase.Database;
 
-public class IntroBttns : MonoBehaviour
-{
+public class IntroBttns : MonoBehaviour {
+    public AuthManager authManager;
 
     // Use this for initialization
     void Start()
@@ -34,24 +34,33 @@ public class IntroBttns : MonoBehaviour
         */
 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void JankoBtnPressed()
     {
-        Debug.Log("Janko chce hrat");
-        SSTools.ShowMessage("Janko chce hrat", SSTools.Position.bottom, SSTools.Time.oneSecond);
+        Debug.Log("Janko chce hrat s Marienkou");
+        Player janko = Player.getJanko();
+        authManager.LoginExistingUser(janko.email, "Unity123");
+        MySceneManager.setMainPlayer(janko);
+        MySceneManager.setSecondPlayer(Player.getMarienka());
+        SSTools.ShowMessage("Janko chce hrat s Marienkou", SSTools.Position.bottom, SSTools.Time.oneSecond);
         SceneManager.LoadScene("Levels");
+        //SceneManager.LoadScene("Player List");
     }
     public void MarienkaBtnPressed()
     {
-        Debug.Log("Marienka chce hrat");
-        SSTools.ShowMessage("Marienka chce hrat", SSTools.Position.bottom, SSTools.Time.oneSecond);
+        Debug.Log("Marienka chce hrat s Jankom");
+        Player marienka = Player.getMarienka();
+        authManager.LoginExistingUser(marienka.email, "Unity123");
+        MySceneManager.setMainPlayer(marienka);
+        MySceneManager.setSecondPlayer(Player.getJanko());
+        SSTools.ShowMessage("Marienka chce hrat s Jankom", SSTools.Position.bottom, SSTools.Time.oneSecond);
         SceneManager.LoadScene("Levels");
+        //SceneManager.LoadScene("Player List");
+    }
+    public void AlienBtnPressed()
+    {
+        Debug.Log("Mimozemstan chce hrat");
+        SSTools.ShowMessage("Mimozemstan chce hrat", SSTools.Position.bottom, SSTools.Time.oneSecond);
+        SceneManager.LoadScene("Login");
     }
     public void ExitBtnPressed()
     {
@@ -61,6 +70,11 @@ public class IntroBttns : MonoBehaviour
     public void HelpBtnPressed()
     {
         Debug.Log("Help yourself");
+        SSTools.ShowMessage("Help yourself", SSTools.Position.bottom, SSTools.Time.oneSecond);
+    }
+
+    // zbytocne
+    public void zapisDoFB() { 
         // prvy pokus zapisat nieco a precitat z FB
         FirebaseConnect db = new FirebaseConnect();
         Dictionary<string, string> data = new Dictionary<string, string>();
@@ -78,8 +92,6 @@ public class IntroBttns : MonoBehaviour
         db.RegistrationNewAccount(studentkaMarienka);
         db.Login(studentJanko);
         db.Login(studentkaMarienka);
-
-        //SceneManager.LoadScene("Ledd");
     }
     public void BackToIntroBtnPressed()
     {

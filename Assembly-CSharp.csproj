@@ -60,11 +60,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FirebaseConnect.cs" />
-    <Compile Include="Assets\FirebaseNotificationController.cs" />
+    <Compile Include="Assets\aa.cs" />
+    <Compile Include="Assets\Scripts\CardManager.cs" />
+    <Compile Include="Assets\Scripts\DoInMainThread.cs" />
+    <Compile Include="Assets\Scripts\Firebase\Managers\AuthManager.cs" />
+    <Compile Include="Assets\Scripts\Firebase\Managers\DatabaseManager.cs" />
+    <Compile Include="Assets\Scripts\Firebase\Managers\FaceCard.cs" />
+    <Compile Include="Assets\Scripts\Firebase\Managers\FacePickerManager.cs" />
+    <Compile Include="Assets\Scripts\Firebase\Managers\FormManager.cs" />
+    <Compile Include="Assets\Scripts\Firebase\Managers\PlayerBoardManager.cs" />
+    <Compile Include="Assets\Scripts\Firebase\Models\GameStatus.cs" />
+    <Compile Include="Assets\Scripts\Firebase\Models\Player.cs" />
+    <Compile Include="Assets\Scripts\Firebase\Utilities\ProfileConfig.cs" />
+    <Compile Include="Assets\Scripts\Firebase\Utilities\Router.cs" />
+    <Compile Include="Assets\Scripts\Firebase\Utilities\RowConfig.cs" />
+    <Compile Include="Assets\Scripts\FirebaseConnect.cs" />
+    <Compile Include="Assets\Scripts\FirebaseNotificationController.cs" />
     <Compile Include="Assets\Scripts\IntroBttns.cs" />
-    <Compile Include="Assets\Scripts\IntroButtons.cs" />
+    <Compile Include="Assets\Scripts\LevelsBttns.cs" />
+    <Compile Include="Assets\Scripts\MySceneManager.cs" />
+    <Compile Include="Assets\Scripts\ParticleLife.cs" />
+    <Compile Include="Assets\Scripts\PexesoCard.cs" />
     <Compile Include="Assets\Scripts\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\Student.cs" />
     <Compile Include="Assets\Scripts\VirtualClass.cs" />
     <Compile Include="Assets\SSTools\Scripts\DBStruct.cs" />

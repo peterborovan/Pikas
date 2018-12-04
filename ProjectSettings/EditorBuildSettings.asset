@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels.unity
     guid: 7bf425e76702c1343acd4a2052eeb651
+  - enabled: 1
+    path: Assets/Scenes/Playground.unity
+    guid: 9f39186d0249f5e4d974707c9898ea15
+  - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: 0ad9ece86acd10b489d42b7fe3758351
+  - enabled: 1
+    path: Assets/Scenes/Player List.unity
+    guid: eb524f2c1ef71bc448cb107ffd653d85
+  - enabled: 1
+    path: Assets/Scenes/FacePicker.unity
+    guid: d8d9c83a4f4e4ab4cb608b5e041c90f8
   m_configObjects: {}
